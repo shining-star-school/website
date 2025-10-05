@@ -24,10 +24,10 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-gradient-to-r from-white via-pink-50 to-red-100">
+      <div className="container mx-auto px-4 ">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-hero bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-red-600 font-poppins mb-4">
             What Parents Say
           </h2>
           <p className="text-xl text-muted-foreground">

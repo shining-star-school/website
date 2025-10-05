@@ -24,7 +24,7 @@ const Contact = () => {
   };
 
   const handleWhatsApp = () => {
-    window.open('https://wa.me/919876543210?text=Hello! I would like to know more about The Shining Star School.', '_blank');
+    window.open('https://wa.me/919414017518?text=Hello! I would like to know more about The Shining Star School.', '_blank');
   };
 
   return (
@@ -32,7 +32,7 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-red-600 bg-clip-text text-transparent">
             Contact Us
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -44,12 +44,12 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8 animate-fade-in">
             <div className="bg-card rounded-2xl p-8 shadow-card">
-              <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
+              <h2 className="text-3xl text-red-600 font-bold mb-6">Get in Touch</h2>
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-hero flex items-center justify-center flex-shrink-0 shadow-glow">
-                    <MapPin className="h-6 w-6 text-primary-foreground" />
+                  <div className="w-12 h-12 rounded-full bg-red-200 flex items-center justify-center flex-shrink-0 shadow-glow">
+                    <MapPin className="h-6 w-6 text-red" />
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Address</h3>
@@ -61,8 +61,8 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-hero flex items-center justify-center flex-shrink-0 shadow-glow">
-                    <Phone className="h-6 w-6 text-primary-foreground" />
+                  <div className="w-12 h-12 rounded-full bg-red-200 flex items-center justify-center flex-shrink-0 shadow-glow">
+                    <Phone className="h-6 w-6 text-black" />
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
@@ -73,25 +73,25 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-hero flex items-center justify-center flex-shrink-0 shadow-glow">
-                    <Mail className="h-6 w-6 text-primary-foreground" />
+                  <div className="w-12 h-12 rounded-full bg-red-200 flex items-center justify-center flex-shrink-0 shadow-glow">
+                    <Mail className="h-6 w-6 " />
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <a href="mailto:info@shiningstarschool.com" className="text-muted-foreground hover:text-primary transition-colors">
-                      info@shiningstarschool.com
+                    <a href="mailto:info.theshiningstarschool@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                      info.theshiningstarschool@gmail.com
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-hero flex items-center justify-center flex-shrink-0 shadow-glow">
-                    <Clock className="h-6 w-6 text-primary-foreground" />
+                  <div className="w-12 h-12 rounded-full bg-red-200 flex items-center justify-center flex-shrink-0 shadow-glow">
+                    <Clock className="h-6 w-6 " />
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">School Hours</h3>
                     <p className="text-muted-foreground">
-                      Monday - Friday: 8:00 AM - 2:00 PM<br />
+                      Monday - Friday: 8:00 AM - 4:00 PM<br />
                       Saturday: 8:00 AM - 12:00 PM
                     </p>
                   </div>
@@ -112,7 +112,7 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="animate-fade-in">
             <div className="bg-card rounded-2xl p-8 shadow-card">
-              <h2 className="text-3xl font-bold mb-6">Send us a Message</h2>
+              <h2 className="text-3xl text-red-600 font-bold mb-6">Send us a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <Label htmlFor="name">Your Name *</Label>
@@ -157,7 +157,7 @@ const Contact = () => {
         {/* Map */}
         <div className="mt-16 animate-fade-in">
           <div className="bg-card rounded-2xl p-4 shadow-card">
-            <h2 className="text-3xl font-bold mb-6 px-4">Find Us on Map</h2>
+            <h2 className="text-3xl font-bold text-red-600 mb-6 px-4">Find Us on Map</h2>
             <div className="rounded-xl overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.205655958038!2d75.72017027487003!3d26.96038595804131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db2d70042d00d%3A0x2bb93250ef625788!2sThe%20Shining%20Star%20School!5e0!3m2!1sen!2sin!4v1759659727369!5m2!1sen!2sin"

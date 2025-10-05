@@ -42,7 +42,7 @@ const Admissions = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-red-600 bg-clip-text text-transparent">
             Admissions
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -136,7 +136,7 @@ const Admissions = () => {
 
         {/* FAQ */}
         <section className="mb-20 animate-fade-in">
-          <h2 className="text-4xl font-bold text-center mb-12">Admission FAQs</h2>
+          <h2 className="text-4xl font-bold text-center text-red-600 mb-12">Admission FAQs</h2>
           <Accordion type="single" collapsible className="max-w-3xl mx-auto">
             <AccordionItem value="item-1">
               <AccordionTrigger className="text-lg font-semibold">
@@ -179,7 +179,7 @@ const Admissions = () => {
         {/* Enquiry Form */}
         <section className="animate-fade-in">
           <div className="bg-card rounded-2xl p-8 md:p-12 shadow-card max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-hero bg-clip-text text-transparent">
+            <h2 className="text-3xl font-bold mb-6 text-center text-red-600 bg-clip-text text-transparent">
               Submit Your Enquiry
             </h2>
             <form onSubmit={handleSubmit} className="space-y-6">

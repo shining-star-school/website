@@ -6,7 +6,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-bold text-red-600 font-poppins mb-4">
             About The Shining Star School
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -22,14 +22,11 @@ const About = () => {
               Our Legacy
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              For over 15 years, The Shining Star School has been a beacon of educational excellence in Jaipur. 
-              Founded with a vision to provide world-class education accessible to all, we have grown into one 
-              of the most trusted educational institutions in the region.
+              For years, we have nurtured young minds with an education that goes beyond academics. Our approach blends modern learning with timeless values, helping children grow not only intellectually, but emotionally and socially, becoming confident and compassionate individuals.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Our journey began with a commitment to nurture young minds through innovative teaching methods 
-              and a curriculum that balances academic rigor with holistic development. Today, we proudly serve 
-              over 1000 families and continue to set benchmarks in quality education.
+              Our legacy lies in the lives we’ve shaped—students who are curious, resilient, and purposeful. Every milestone reflects our commitment to holistic development, preparing each child to step into the world with knowledge, wisdom, and heart.
+
             </p>
           </div>
         </section>
@@ -40,9 +37,7 @@ const About = () => {
             <Target className="h-12 w-12 mb-6" />
             <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
             <p className="text-lg leading-relaxed opacity-90">
-              To provide a nurturing and stimulating environment where every child can discover their unique 
-              potential, develop strong academic foundations, and grow into confident, compassionate individuals 
-              ready to make a positive impact on the world.
+              To inspire and empower every child to reach their fullest potential through holistic education that balances knowledge, creativity, and character. We aim to cultivate curious minds, compassionate hearts, and confident individuals who can thrive in a rapidly changing world.
             </p>
           </div>
 
@@ -50,16 +45,14 @@ const About = () => {
             <Eye className="h-12 w-12 text-accent mb-6" />
             <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              To be recognized as the leading educational institution that transforms lives through innovative 
-              teaching, character building, and a commitment to excellence. We envision a future where our 
-              students become leaders, thinkers, and change-makers in their chosen fields.
+              To be a nurturing and innovative learning community where every child blossoms into a confident, compassionate, and creative individual. We envision a world where education empowers learners to think critically, act responsibly, and contribute positively to society.
             </p>
           </div>
         </section>
 
         {/* Core Values */}
         <section className="mb-20 animate-fade-in">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-hero bg-clip-text text-transparent">
+          <h2 className="text-4xl text-red-600 font-bold text-center mb-12 bg-clip-text text-transparent">
             Our Core Values
           </h2>
           <div className="grid md:grid-cols-4 gap-6">
@@ -101,7 +94,7 @@ const About = () => {
 
         {/* Learning Philosophy */}
         <section className="mt-20 text-center animate-fade-in">
-          <h2 className="text-4xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-6 text-red-600 bg-gradient-hero bg-clip-text text-transparent">
             Our Learning Philosophy
           </h2>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
