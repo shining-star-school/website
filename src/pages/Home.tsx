@@ -25,6 +25,7 @@ import HeroCarousel from '@/components/home/HeroCarousel';
 import ImpactStats from '@/components/home/ImpactStats';
 import Gallery from '@/components/home/Gallery';
 import Testimonials from '@/components/home/Testimonials';
+import WhyTSSS from '@/components/home/WhyTSSS';
 
 
 const Home = () => {
@@ -72,7 +73,7 @@ const Home = () => {
       <ImpactStats />
 
       {/* Highlights Section */}
-      <section className="py-16 bg-gradient-to-r from-white via-pink-50 to-red-100">
+      {/* <section className="py-16 bg-gradient-to-r from-white via-pink-50 to-red-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-red-600 font-poppins mb-4">
@@ -102,7 +103,9 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+      <WhyTSSS />
+
 
 
       {/* Testimonials Section */}  

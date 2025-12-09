@@ -17,16 +17,14 @@ const EnquiryPopup = ({ isOpen, onClose }: EnquiryPopupProps) => {
   const [formData, setFormData] = useState({
     childName: '',
     childAge: '',
-    parentName: '',
     phone: '',
-    address: '',
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
     // Basic validation
-    if (!formData.childName || !formData.parentName || !formData.phone) {
+    if (!formData.childName || !formData.childAge || !formData.phone) {
       toast({
         title: "Missing Information",
         description: "Please fill in all required fields.",
@@ -45,9 +43,8 @@ const EnquiryPopup = ({ isOpen, onClose }: EnquiryPopupProps) => {
     setFormData({
       childName: '',
       childAge: '',
-      parentName: '',
       phone: '',
-      address: '',
+      
     });
 
     onClose();
@@ -94,16 +91,7 @@ const EnquiryPopup = ({ isOpen, onClose }: EnquiryPopupProps) => {
             />
           </div>
 
-          <div>
-            <Label htmlFor="parentName">Parent Name *</Label>
-            <Input
-              id="parentName"
-              value={formData.parentName}
-              onChange={(e) => setFormData({ ...formData, parentName: e.target.value })}
-              placeholder="Enter parent's name"
-              required
-            />
-          </div>
+         
 
           <div>
             <Label htmlFor="phone">Phone Number *</Label>
@@ -117,16 +105,7 @@ const EnquiryPopup = ({ isOpen, onClose }: EnquiryPopupProps) => {
             />
           </div>
 
-          <div>
-            <Label htmlFor="address">Address</Label>
-            <Textarea
-              id="address"
-              value={formData.address}
-              onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-              placeholder="Enter your address"
-              rows={3}
-            />
-          </div>
+        
 
           <div className="flex gap-3 pt-4">
             <Button type="submit" className="flex-1 bg-gradient-hero shadow-glow">

@@ -106,7 +106,7 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Why Shining Star', path: '/why-shining-star' },
+    { name: 'Academics', path: '/academics' },
     { name: 'Admissions', path: '/admissions' },
     { name: 'Contact Us', path: '/contact' },
   ];
