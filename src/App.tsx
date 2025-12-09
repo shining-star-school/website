@@ -9,7 +9,7 @@ import About from "./pages/About";
 import Admissions from "./pages/Admissions";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import Academics from "./pages/academics";
+import Academics from "./pages/Academics";
 
 const queryClient = new QueryClient();
 
