@@ -3,9 +3,8 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-import { X } from 'lucide-react';
+// Removed the 'X' import as the default dialog close button is sufficient
 
 interface EnquiryPopupProps {
   isOpen: boolean;
@@ -44,7 +43,6 @@ const EnquiryPopup = ({ isOpen, onClose }: EnquiryPopupProps) => {
       childName: '',
       childAge: '',
       phone: '',
-      
     });
 
     onClose();
@@ -53,14 +51,7 @@ const EnquiryPopup = ({ isOpen, onClose }: EnquiryPopupProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-md">
-        <Button
-          onClick={onClose}
-          variant="ghost"
-          size="icon"
-          className="absolute top-4 right-4"
-        >
-          <X className="h-5 w-5" />
-        </Button>
+        {/* Removed the manual X button here to avoid duplication */}
         
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold bg-red-500 bg-clip-text text-transparent">
@@ -91,8 +82,6 @@ const EnquiryPopup = ({ isOpen, onClose }: EnquiryPopupProps) => {
             />
           </div>
 
-         
-
           <div>
             <Label htmlFor="phone">Phone Number *</Label>
             <Input
@@ -105,14 +94,10 @@ const EnquiryPopup = ({ isOpen, onClose }: EnquiryPopupProps) => {
             />
           </div>
 
-        
-
-          <div className="flex gap-3 pt-4">
-            <Button type="submit" className="flex-1 bg-red-500 shadow-glow">
+          <div className="pt-4">
+            {/* Removed the bottom 'Close' button and made Submit full width */}
+            <Button type="submit" className="w-full bg-red-500 shadow-glow">
               Submit Enquiry
-            </Button>
-            <Button type="button" variant="outline" onClick={onClose}>
-              Close
             </Button>
           </div>
         </form>
@@ -122,3 +107,143 @@ const EnquiryPopup = ({ isOpen, onClose }: EnquiryPopupProps) => {
 };
 
 export default EnquiryPopup;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { useState } from 'react';
+// import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+// import { Button } from '@/components/ui/button';
+// import { Input } from '@/components/ui/input';
+// import { Label } from '@/components/ui/label';
+// import { Textarea } from '@/components/ui/textarea';
+// import { useToast } from '@/hooks/use-toast';
+// import { X } from 'lucide-react';
+
+// interface EnquiryPopupProps {
+//   isOpen: boolean;
+//   onClose: () => void;
+// }
+
+// const EnquiryPopup = ({ isOpen, onClose }: EnquiryPopupProps) => {
+//   const { toast } = useToast();
+//   const [formData, setFormData] = useState({
+//     childName: '',
+//     childAge: '',
+//     phone: '',
+//   });
+
+//   const handleSubmit = (e: React.FormEvent) => {
+//     e.preventDefault();
+    
+//     // Basic validation
+//     if (!formData.childName || !formData.childAge || !formData.phone) {
+//       toast({
+//         title: "Missing Information",
+//         description: "Please fill in all required fields.",
+//         variant: "destructive",
+//       });
+//       return;
+//     }
+
+//     // Here you would typically send the data to a backend
+//     toast({
+//       title: "Enquiry Submitted!",
+//       description: "We will contact you soon. Thank you for your interest!",
+//     });
+
+//     // Reset form
+//     setFormData({
+//       childName: '',
+//       childAge: '',
+//       phone: '',
+      
+//     });
+
+//     onClose();
+//   };
+
+//   return (
+//     <Dialog open={isOpen} onOpenChange={onClose}>
+//       <DialogContent className="max-w-md">
+//         <Button
+//           onClick={onClose}
+//           variant="ghost"
+//           size="icon"
+//           className="absolute top-4 right-4"
+//         >
+//           <X className="h-5 w-5" />
+//         </Button>
+        
+//         <DialogHeader>
+//           <DialogTitle className="text-2xl font-bold bg-red-500 bg-clip-text text-transparent">
+//             Enquiry Form
+//           </DialogTitle>
+//         </DialogHeader>
+
+//         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
+//           <div>
+//             <Label htmlFor="childName">Child Name *</Label>
+//             <Input
+//               id="childName"
+//               value={formData.childName}
+//               onChange={(e) => setFormData({ ...formData, childName: e.target.value })}
+//               placeholder="Enter child's name"
+//               required
+//             />
+//           </div>
+
+//           <div>
+//             <Label htmlFor="childAge">Child Age</Label>
+//             <Input
+//               id="childAge"
+//               type="number"
+//               value={formData.childAge}
+//               onChange={(e) => setFormData({ ...formData, childAge: e.target.value })}
+//               placeholder="Enter child's age"
+//             />
+//           </div>
+
+         
+
+//           <div>
+//             <Label htmlFor="phone">Phone Number *</Label>
+//             <Input
+//               id="phone"
+//               type="tel"
+//               value={formData.phone}
+//               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+//               placeholder="Enter phone number"
+//               required
+//             />
+//           </div>
+
+        
+
+//           <div className="flex gap-3 pt-4">
+//             <Button type="submit" className="flex-1 bg-red-500 shadow-glow">
+//               Submit Enquiry
+//             </Button>
+//             <Button type="button" variant="outline" onClick={onClose}>
+//               Close
+//             </Button>
+//           </div>
+//         </form>
+//       </DialogContent>
+//     </Dialog>
+//   );
+// };
+
+// export default EnquiryPopup;
