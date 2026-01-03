@@ -63,7 +63,7 @@ const EnquiryPopup = ({ isOpen, onClose }: EnquiryPopupProps) => {
         </Button>
         
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+          <DialogTitle className="text-2xl font-bold bg-red-500 bg-clip-text text-transparent">
             Enquiry Form
           </DialogTitle>
         </DialogHeader>
@@ -108,7 +108,7 @@ const EnquiryPopup = ({ isOpen, onClose }: EnquiryPopupProps) => {
         
 
           <div className="flex gap-3 pt-4">
-            <Button type="submit" className="flex-1 bg-gradient-hero shadow-glow">
+            <Button type="submit" className="flex-1 bg-red-500 shadow-glow">
               Submit Enquiry
             </Button>
             <Button type="button" variant="outline" onClick={onClose}>
