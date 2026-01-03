@@ -8,7 +8,7 @@
 import React from 'react';
 // Added new icons for the Core Values section
 import { Target, Eye, Award, Users, Star, ShieldCheck, Lightbulb, Heart } from 'lucide-react';
-import principalImage from '../assets/c1.jpg'; // Adjust the path as necessary
+import principalImage from '../assets/principal1.jpg'; // Adjust the path as necessary
 
 const About = () => {
   return (

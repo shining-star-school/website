@@ -1,25 +1,31 @@
 import { Star } from 'lucide-react';
 import testimonial1 from '@/assets/testimonial-1.jpg';
+import testimonial2 from '@/assets/testimonial-2.jpg';
+import testimonial3 from '@/assets/testimonial-3.jpg';
+
+
 
 const testimonials = [
   {
-    name: 'Mrs. Priya Sharma',
+    name: 'Mr. Dheeraj Agarwal',
     image: testimonial1,
-    text: "The Shining Star School has been instrumental in my child's growth. The teachers are caring, and the curriculum is excellent. We couldn't be happier!",
+    text: 'The Shining Star School is very good. Our children get to learn new things here every day. My child is learning very good habits in this school. Hiyansh goes home and recites new poems and talks about shapes. One day, he suddenly told a story to his grandparents, which made them very happy.',
+    rating: 5,
+  
+  },
+    {
+    name: 'Mrs. Pooja Gupta',
+    image: testimonial3,
+    text: 'They are focusing well on the students to help build up their curriculum. He is able to write lowercase letters on his own in literacy class, which is quite amazing.',
     rating: 5,
   },
   {
-    name: 'Mr. Rajesh Kumar',
-    image: testimonial1,
-    text: 'Outstanding infrastructure and dedicated faculty. My daughter has shown remarkable improvement in academics and extracurricular activities.',
+    name: 'Mrs. Monalisha Nayak',
+    image: testimonial2,
+    text: 'The Shining Star School is the most experimental school in the area. My child is doing very well. The school is the most popular and highly recommended school in the community. The school highlights environment, activities, and values.',
     rating: 5,
   },
-  {
-    name: 'Mrs. Anjali Verma',
-    image: testimonial1,
-    text: 'A school that truly cares about each child. The individual attention and holistic approach to education make it the best choice in Jaipur.',
-    rating: 5,
-  },
+
 ];
 
 const Testimonials = () => {

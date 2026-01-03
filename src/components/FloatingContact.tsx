@@ -2,8 +2,8 @@ import { Phone, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const FloatingContact = () => {
-  const phoneNumber = "+919876543210"; // Replace with actual number
-  const whatsappNumber = "919876543210"; // Replace with actual number
+  const phoneNumber = "+919414456312"; 
+  const whatsappNumber = "919414017518"; 
 
   const handleCall = () => {
     window.location.href = `tel:${phoneNumber}`;
@@ -17,7 +17,7 @@ const FloatingContact = () => {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
       <Button
         onClick={handleCall}
-        className="h-14 w-14 rounded-full shadow-glow hover:scale-110 transition-transform bg-gradient-hero"
+        className="h-14 w-14 rounded-full shadow-glow hover:scale-110 transition-transform bg-red-600"
         size="icon"
         aria-label="Call Now"
       >

@@ -207,14 +207,18 @@ import {
   // --- Icons for new sections ---
   Brain, Palette, Search, Smile, Layers, FlaskConical, Computer, Bus, Music, BookUser
 } from 'lucide-react';
-import montessoriImage from '/src/assets/c3.jpg';
+import montessoriImage from '/src/assets/pre-primary-wing.png';
+import primary_wing from '/src/assets/1st_to_8th.jpg';
+import brain from '/src/assets/brain.jpg';
+
+
 
 // --- Placeholder Images ---
 // (Remember to replace these paths with your actual images)
 // Example: import prePrimaryHero from '../assets/images/pre-primary-kids-playing.jpg';
 const prePrimaryHero = montessoriImage;
-const brainDevImage = montessoriImage;
-const primaryWingImage = montessoriImage;
+const brainDevImage = brain;
+const primaryWingImage = primary_wing;
 
 
 // --- Main Component ---
@@ -360,9 +364,9 @@ const Academics = () => {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-6">
                     <div className="flex-1">
-                      <img src={brainDevImage} alt="Brain Development" className="rounded-xl shadow-md object-cover w-full h-40" />
+                      <img src={brainDevImage} alt="Brain Development" className="rounded-xl shadow-md object-cover w-full h-64 md:h-80" />
                     </div>
-                    <div className="flex-1 space-y-4">
+                    <div className="flex-1 flex flex-col justify-center space-y-4">
                       <div className="bg-red-100 p-4 rounded-lg text-center">
                         <span className="text-3xl font-bold text-red-600">75%</span>
                         <p className="font-semibold text-gray-700">Brain development before age 3</p>
@@ -390,7 +394,7 @@ const Academics = () => {
           <div className="flex flex-col lg:flex-row-reverse gap-12 items-center">
             
             {/* Right Side: Image */}
-            <div className="w-full lg:w-5/12">
+            <div className="w-full lg:w-7/12 lg:mt-32">
               <img 
                 src={primaryWingImage} 
                 alt="Primary Students in Lab" 
